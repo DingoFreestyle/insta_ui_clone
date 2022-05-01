@@ -2,13 +2,317 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <style>
+        P {
+            display: flex;
+            margin: 5px auto auto auto;
+            max-width: 600px;
+            width: 80%;
+            border: 2px solid black;
+            height: 1000px
+        }
 
+        h5 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
 
+        </style>
+
+    <title>INSTAGRAM_COPY</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </head>
-<body>
+<style>
+    .profile {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+    }
+    .head_feed {
+        display: table;
+        margin: 90px auto 5px auto;
+        width: 100%;
+        max-width: 600px;
+    }
+    .align-R{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+</style>
+<body style="background-color: #fafafa">
+<!--------------------------▼▼▼▼▼▼▼ 상단 고정 바 ▼▼▼▼▼▼▼------------------------------------->
+<nav class="navbar navbar-expand-sm bg-white navbar-black fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+        <ul class="nav justify-content-center">
+            <form class="d-flex">
+                <input class="form-control me-2" style="background-color: #d3d3d3" type="text" placeholder="Search">
+            </form>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><img src="images/home_ico.png"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><img src="images/message_ico.png"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><img src="images/upload_ico.png"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><img src="images/freefeeds.png"></a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><img src="images/alram_list.ico.png"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><img class="profile" src="images/id_image.jpg"></a>
+            </li>
+        </ul>
+    </div>
+    </li>
+    </ul>
+    </form>
+    </div>
+</nav>
+<!--------------------------▲▲▲▲▲▲ 상단 고정 바 ▲▲▲▲▲▲------------------------------------->
+<!--피드001-->
+<div class="head_feed bg-white" style="border: 0.5px solid #b4b4b4">
+    <div class="d-flex flex-column">
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼ID▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <div class="d-flex" href="index.html">
+                <div class="p-2"><img class="profile" src="images/ids/9gag.png"></div>
+                <div class="p-2"><h4><b>9gag meme factory</b></h4></div>
+                <div class="p-2 flex-grow-1"><h5>•••</h5></div>
+            </div>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲ID▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼사진▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                </div>
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/main_pics/A001.png" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/main_pics/A002.png" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/main_pics/A003.jpg" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/main_pics/A004.png" class="d-block" style="width:100%">
+                    </div>
+                </div>
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲사진▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼좋아요▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <div class="d-flex" href="index.html">
+                <div class="p-2"><img src="images/alram_list.ico.png"></div>
+                <div class="p-2"><img src="images/dm.png"></div>
+                <div class="p-2"><img src="images/message_ico.png"></div>
+                <div class="p-2 flex-grow-1"><h5><img src="images/save_post.png"></h5></div>
+            </div>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲좋아요▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼멘트▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <h4><b>좋아요 0개</b></h4>
+            <h4><b>9gag meme factory</b></h4><h6>❤❤❤❤❤❤❤</h6>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲멘트▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼댓글입력창▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <div class="d-flex">
+                <div class="p-2"><img src="images/emoticon.png"></div>
+                <div class="p-2"><input class="form-control" type="text" placeholder="댓글 달기..." style="border: 2px solid white"></div>
+                <div class="p-2 flex-grow-1"><h5 style="color: dodgerblue">게시</h5></div>
+            </div>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲댓글입력창▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+    </div>
+</div>
+<!--피드002-->
+<div class="head_feed bg-white" style="border: 0.5px solid #b4b4b4">
+    <div class="d-flex flex-column">
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼ID▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <div class="d-flex" href="index.html">
+                <div class="p-2"><img class="profile" src="images/ids/me.jpg"></div>
+                <div class="p-2"><h4><b>memecollector</b></h4></div>
+                <div class="p-2 flex-grow-1"><h5>•••</h5></div>
+            </div>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲ID▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼사진▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                </div>
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/main_pics/B001.png" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/main_pics/B002.jpg" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/main_pics/B003.jpg" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/main_pics/B004.png" class="d-block" style="width:100%">
+                    </div>
+                </div>
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲사진▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼좋아요▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <div class="d-flex" href="index.html">
+                <div class="p-2"><img src="images/alram_list.ico.png"></div>
+                <div class="p-2"><img src="images/dm.png"></div>
+                <div class="p-2"><img src="images/message_ico.png"></div>
+                <div class="p-2 flex-grow-1"><h5><img src="images/save_post.png"></h5></div>
+            </div>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲좋아요▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼멘트▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <h4><b>좋아요 0개</b></h4>
+            <h4><b>memecollector</b></h4><h6>화이팅!</h6>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲멘트▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼댓글입력창▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <div class="d-flex">
+                <div class="p-2"><img src="images/emoticon.png"></div>
+                <div class="p-2"><input class="form-control" type="text" placeholder="댓글 달기..." style="border: 2px solid white"></div>
+                <div class="p-2 flex-grow-1"><h5 style="color: dodgerblue">게시</h5></div>
+            </div>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲댓글입력창▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+    </div>
+</div>
+<!--피드003-->
+<div class="head_feed bg-white" style="border: 0.5px solid #b4b4b4">
+    <div class="d-flex flex-column">
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼ID▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <div class="d-flex" href="index.html">
+                <div class="p-2"><img class="profile" src="images/ids/9gag.png"></div>
+                <div class="p-2"><h4><b>9gag meme factory</b></h4></div>
+                <div class="p-2 flex-grow-1"><h5>•••</h5></div>
+            </div>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲ID▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼사진▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel" class="active">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                </div>
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/main_pics/c001.jpg" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/main_pics/c002.jpg" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/main_pics/c003.png" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/main_pics/c004.jpg" class="d-block" style="width:100%">
+                    </div>
+                </div>
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲사진▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼좋아요▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <div class="d-flex" href="index.html">
+                <div class="p-2"><img src="images/alram_list.ico.png"></div>
+                <div class="p-2"><img src="images/dm.png"></div>
+                <div class="p-2"><img src="images/message_ico.png"></div>
+                <div class="p-2 flex-grow-1"><h5><img src="images/save_post.png"></h5></div>
+            </div>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲좋아요▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼멘트▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <h4><b>좋아요 0개</b></h4>
+            <h4><b>9gag meme factory</b></h4><h6>jesus meme</h6>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲멘트▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+        <!--▼▼▼▼▼▼▼▼▼▼▼▼▼댓글입력창▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+        <div class="p-2">
+            <div class="d-flex">
+                <div class="p-2"><img src="images/emoticon.png"></div>
+                <div class="p-2"><input class="form-control" type="text" placeholder="댓글 달기..." style="border: 2px solid white"></div>
+                <div class="p-2 flex-grow-1"><h5 style="color: dodgerblue">게시</h5></div>
+            </div>
+        </div>
+        <!--▲▲▲▲▲▲▲▲▲▲▲▲▲댓글입력창▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+    </div>
+</div>
 
+<script>
+    var win = $(window);
+    $("p:last").text("scroollTop:" + win.scrollTop());
+</script>
 </body>
 </html>
