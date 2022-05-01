@@ -27,14 +27,14 @@
 
 ////////////////// 마우스 반응 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
 
-$(document).ready(function () {
-    $('#logo').on('mouseover', function () {   ///////  ".on"을 사용해서 작동! 을 표헌 / - mouseover > 커서가 올라왔을 때,
-        $('#logo').css({'transform': 'scale(0.8)'});
-    $('#logo').on('mouseout', function () {   ///////  - mouseout > 커서가 나왔을 때,
-        $('#logo').css({'transform': 'scale(1)'});
-        });
-    });
-})
+// $(document).ready(function () {
+//     $('#logo').on('mouseover', function () {   ///////  ".on"을 사용해서 작동! 을 표헌 / - mouseover > 커서가 올라왔을 때,
+//         $('#logo').css({'transform': 'scale(0.8)'});
+//     $('#logo').on('mouseout', function () {   ///////  - mouseout > 커서가 나왔을 때,
+//         $('#logo').css({'transform': 'scale(1)'});
+//         });
+//     });
+// })
 ///////////////////////////////////////////////////
 ///// 윗 내용을 아래처럼 줄일 수도 있으니 참고///////////
 
@@ -58,5 +58,13 @@ $(document).ready(function () {
 //  change - 입력 내용 변경시 (textarea, input, select 등등)
 //  resize - 크기 변경시
 //  scroll - 스크롤 시
+//  click - 클릭시
 
 ///////////////////////////////////////////////////
+/////////////////애니메이션 메소드///////////////////
+// 선택자.animate({속성:값, 속성:값}, 시간, 이징, ㅎ
+$(function () {
+    $('#typo.inner').click(function () {
+        $(this).css
+    })
+});
